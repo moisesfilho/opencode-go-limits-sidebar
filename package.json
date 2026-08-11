@@ -4,6 +4,16 @@
   "type": "module",
   "license": "MIT",
   "description": "OpenCode plugin that shows OpenCode Go plan usage in the TUI sidebar (5h / weekly / monthly limits)",
+  "keywords": ["opencode", "opencode-plugin", "sidebar", "tui", "usage", "limits"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moisesfilho/opencode-go-limits-sidebar.git"
+  },
+  "homepage": "https://github.com/moisesfilho/opencode-go-limits-sidebar",
+  "files": ["dist"],
+  "engines": {
+    "opencode": ">=1.0.0"
+  },
   "main": "./dist/server.js",
   "types": "./dist/server.d.ts",
   "exports": {
@@ -34,9 +44,7 @@
     "test": "npm run build && vitest run"
   },
   "peerDependencies": {
-    "@opencode-ai/plugin": ">=1.2.0"
-  },
-  "dependencies": {
+    "@opencode-ai/plugin": ">=1.2.0",
     "@opentui/core": "^0.4.5",
     "@opentui/solid": "^0.4.5",
     "solid-js": "^1.8.0"
